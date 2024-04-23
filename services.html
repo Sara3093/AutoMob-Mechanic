@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Auto Mob Mechanic</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav {
+        background-color: rgb(24, 63, 90);
+        padding: 15px 10px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    nav a:hover {
+        background-color: rgb(211, 59, 90);
+        padding: 15px 8px;
+        border-radius: 5px;
+    }
+    .heading {
+        text-align: center;
+        padding: 50px 0;
+        background: linear-gradient(to right, rgba(24, 63, 90, 0.8), rgba(24, 63, 90, 0.6)), url('header-background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+    .heading h2 {
+        text-decoration: underline;
+        font-size: 30px;
+        margin: 4% 0 1.5%;
+    }
+    .heading h2 span {
+        color: rgb(228, 42, 79);
+    }
+    .heading p {
+        font-size: 18px;
+        margin: 0 15px;
+    }
+    .services {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .service-card {
+        border: 2px solid rgb(161, 159, 159);
+        border-radius: 5px;
+        text-align: center;
+        margin: 4% 0;
+        box-shadow: 4px 4px 2px grey;
+        transition: all 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    .service-card img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+        height: 200px; /* Adjust this value as needed */
+        object-fit: cover;
+    }
+    .service-card h3 a {
+        text-decoration: none;
+        color: black;
+    }
+    .service-card p {
+        padding: 10px;
+    }
+    .main_footer {
+        background-color: rgb(24, 63, 90);
+        text-align: center;
+        color: white;
+        padding: 12px;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <nav>
+        <a href="home.html" style="margin-right: 45%;">Auto Mob Mechanic</a>
+        <a href="services.html" style="margin-right: 2%;">Services</a>
+        <a href="booking.html" style="margin-right: 2%;">Booking</a>
+        <a href="" style="margin-right: 2%;"><i class="fa fa-envelope">contact@automob.co.in</i></a>
+        <a href=""><i class="fa fa-phone">999-999-9999</i></a>
+    </nav>
+    <section class="heading">
+        <h2>Our <span>Services</span></h2>
+        <p>Our representatives are professionally trained and skilled with the latest and futuristic techniques to provide the best quality service. At AutoMob-Mechanic, we provide high-class service to the customers for their happy and memorable driving experience.</p>
+    </section>
+    <section class="services">
+        <div class="service-card preventive">
+            <img src="preventive-card.jpg" alt="Preventive Maintenance">
+            <h3><a href="preventive_maintenance.html">Preventive Maintenance</a></h3>
+            <p>Periodically check and keep your car running.</p>
+        </div>
+        <div class="service-card body_repair">
+            <img src="body-repair-card.jpg" alt="Body Repair">
+            <h3><a href="body_repair.html">Body Repair</a></h3>
+            <p>Full basic body repair provided by the experts.</p>
+        </div>
+        <div class="service-card car_care">
+            <img src="car-care-card.jpg" alt="Car Care">
+            <h3><a href="car_care.html">Car Care</a></h3>
+            <p>Periodically check and keep your car running.</p>
+        </div>
+    </section>
+    <footer class="main_footer">
+        <p>&copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

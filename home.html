@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Auto Mob Mechanic</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        background-color:rgb(24, 63, 90);
+        padding: 15px 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    nav a:hover{
+        background-color: rgb(211, 59, 90);
+        padding: 15px 8px;
+        border-radius: 5px;
+    }
+    
+    .image{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        background: url('home1.jpg') center/cover no-repeat fixed;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    }
+    .home_info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+    .home_info h2{
+        margin-bottom: 15px;
+        font-size: 30px;
+        animation: fadeInUp 1s ease-out; /* CSS animation for text */
+    }
+    .home_info h4{
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-out 0.5s; /* Delayed animation */
+    }
+    .services_button{
+        background-color: rgb(211, 59, 90);
+        padding: 8px 20px;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .services_button a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .services_button:hover{
+        background-color: rgb(216, 92, 117);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    }
+    .main_footer{
+        background-color:rgb(24, 63, 90);
+        text-align: center;
+        color: white;
+        padding: 12px;
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <nav>
+        <a href="home.html" style="margin-right: 45%;">Auto Mob Mechanic</a>
+        <a href="services.html" style="margin-right: 2%;">Services</a>
+        <a href="booking.html" style="margin-right: 2%;">Booking</a>
+        <a href=""><i class="fa fa-envelope">contact@automob.co.in</i></a>
+        <a href=""><i class="fa fa-phone">999-999-9999</i></a>
+    </nav>
+    <section class="image">
+        <div class="overlay"></div>
+        <div class="home_info">
+            <h2>LOOKING FOR CAR SERVICE?</h2>
+            <h4>Get a free quote and let the professionals do all the work</h4>
+            <button class="services_button"><a href="services.html">EXPLORE MORE</a></button>
+        </div>
+    </section>
+    <footer class="main_footer">
+        <p>&copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

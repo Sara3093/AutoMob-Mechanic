@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Auto Mob Mechanic</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    nav{
+        background-color:rgb(24, 63, 90);
+        padding: 15px 10px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    nav a:hover{
+        background-color: rgb(211, 59, 90);
+        padding: 15px 8px;
+        border-radius: 5px;
+        color: #fff;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid gray;
+        border-radius: 5px;
+        margin: 3% 15%;
+        padding: 2% 0%;
+        box-shadow: 6px 6px 15px grey , -6px -6px 15px grey ;
+    }
+    .flex:hover {
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .image img {
+        border-radius: 5px;
+    }
+    .information {
+        padding: 20px;
+    }
+    .main_footer{
+        background-color:rgb(24, 63, 90);
+        text-align: center;
+        color: white;
+        padding: 12px;
+        margin-top: 50px;
+    }
+    .book_service{
+        margin-top: 20px;
+        color: white;
+        background-color: rgb(216, 44, 44);
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .book_service:hover{
+        background-color: rgb(180, 36, 36);
+    }
+</style>
+<body>
+    <nav>
+        <a href="home.html" style="margin-right: 45%;">Auto Mob Mechanic</a>
+        <a href="services.html" style="margin-right: 2%;">Services</a>
+        <a href="booking.html" style="margin-right: 2%;">Booking</a>
+        <a href="" style="margin-right: 2%;"><i class="fa fa-envelope">contact@automob.co.in</i></a>
+        <a href=""><i class="fa fa-phone">999-999-9999</i></a>
+    </nav>
+    <section class="flex">
+        <div class="image">
+            <img src="body-repair.jpg" height="400px" width="400px">
+        </div>
+        <div class="information">
+            <p><a href="home.html">Home</a> / <a href="services.html">Services</a> / <a href="#">Body Repair Service</a></p>
+            <br>
+            <h2>Body Repair Service</h2>
+            <br>
+            <p style="margin-bottom: 5px; color: red;">Save: 25%</p>
+            <br>
+            <p style="font-size: 18px;">Looking to keep your car functioning smoothly?</p>
+            <p style="font-size: 18px;">Save money and opt for our periodic maintenance service.</p>
+            <p style="font-size: 18px;">This service aims at:</p>
+            <ul>
+                <li style="margin-left: 15%;font-size: 18px;">Air filter replacement.</li>
+                <li style="margin-left: 15%;font-size: 18px;">Engine oil replacement.</li>
+                <li style="margin-left: 15%;font-size: 18px;">Brake pad cleaning.</li>
+            </ul>
+            <br>
+            <br>
+            <p style="font-size: 18px;"><strong>Offer Price: </strong><span style="text-decoration: line-through;">Rs15000 </span><span style="color: red;">Rs9750 </span></p>
+            <button class="book_service"><a href="booking.html" style="text-decoration: none; color: white;">Book Service</a></button>
+        </div>
+    </section>
+    <footer class="main_footer">
+        <p>&copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
